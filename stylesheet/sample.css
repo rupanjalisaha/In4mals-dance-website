@@ -1,0 +1,81 @@
+h1{
+    font-size:40px;
+    text-align:center;
+    text-shadow: 2px 3px 4px rgb(2, 2, 122);
+    font-weight:lighter;
+    text-decoration:overline;
+}
+ul {
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+	padding: 5px;
+	margin:5px;
+}
+div#nav>ul>li>a{
+	background-color:#101d2e;
+	color:rgb(231, 41, 41);
+	text-decoration: none;
+	margin-left:30px;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+}
+#nav{
+	float:right;
+	display:flex;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:10px 20px;
+    font-size:18px;
+    padding:10px;
+    background: #101d2e;
+}
+.container {
+    background-color:lightgray;
+    padding: 1px 20px 1px 20px;
+    /*margin:10px 20px;*/
+    /*border:5px solid rgb(1, 11, 38);*/
+    border-radius: 5px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select,
+textarea{
+    width:100%;
+    padding:7px;
+    border:2px solid lightgray;
+    border-radius: 5px;
+    margin:2px;
+}
+fieldset{
+    background-color: white;
+    border:2px solid lightgray;
+}
+input[type="submit"]{
+    background-color:rgb(22, 125, 156);
+    color:mistyrose;
+    transform: translateX(700px);
+    padding:10px;
+    border:3px solid rgb(3, 70, 90);
+    border-radius: 3px;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    color:orangered;
+}
+h2{
+    color:rgb(69, 69, 238);
+}
+h2:hover{
+    color:rgb(3, 3, 94);
+}
+#Required{
+    color:red;
+}
+#Required:hover{
+    font-weight: bolder;
+}

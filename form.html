@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="stylesheet/sample.css">
+    </head>
+<body>
+    <header>
+        <div class="wrapper">
+          <div class="logo">
+            <img class="a" src="./IN4mals logo.jpeg" width="50px" height="50px">
+          </div>
+      <!--	Top Navigation Bar-->
+          <div id="nav">
+                <ul>
+                    <li><a href="form.html">Contact Us</a></li>
+                    <li><a href="index.html">Events</a></li>
+                    <li><a href="index.html">Our Team</a></li>
+                    <li></li>
+                </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+    <form action="">
+        <h1>Contact Form</h1>
+        <hr>
+        <h2>User Details:</h2>
+        <p id="Required">*All the fields are required for further communication.</p>
+        <p>Name:*<input type="text" name="name" class="new" placeholder="Rupanjali Saha"required></p>
+        <fieldset>
+            <legend>Gender:</legend>
+            <p>
+            Male<input type="radio" name="Gender" class="new" id="Male">Female<input type="radio" name="Gender" id="Female">
+        </p>
+    </fieldset>
+    <p>Address:* <textarea name="address" id="address" id="new" cols="60" rows="5" placeholder="104/A,G.L.T.Road,Baranagar,Kolkata-712201" required></textarea></p>
+    <p>Pincode:* <input type="number" name="Pincode" class="new" id="Pincode" placeholder="712201" required></p>
+    <p>Contact No.:* <input type="number" name="phone no." class="new" id="phone no." required></p>
+    <p>Email:* <input type="text" name="Email" id="Email" class="new" placeholder="2004023@kiit.ac.in"required></p>
+    <input type="checkbox" class="new"><p>"I agree that all the information provided by me are correct to my knowledge."</p>
+    <hr>
+    <hr>
+    <p>Query:* <textarea name="query" id="query" class="new" cols="60" rows="5" placeholder="Please feel free to inform us about your query" required></textarea></p>
+<p>
+<input type="submit" value="Submit" onclick=Submit()>
+</p>
+    </form>
+    </div>
+<script>
+    function Submit(){
+        if (document.getElementsById("new").value=""){
+            alert("Please fill up all the fields.")
+            }
+            else{
+            alert("Query submitted successfully");
+            }
+    }
+</script>
+</body>
+</html>
